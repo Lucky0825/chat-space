@@ -8,7 +8,10 @@
 
 ### Association
 - has_many :messages
-
+  has_many :members
+  has_many :groups,through: members
+ 
+ 
  ##messageテーブル
 
 |Column|Type|Options|
