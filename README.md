@@ -45,6 +45,6 @@
 |user_name|references|null: false, foreign_key: true|
 
 ### Association
-has_many :messages
-has_many :members
-has_many :groups,through: :members
+  has_many :messages
+  has_many :members
+  has_many :groups,through: :members
