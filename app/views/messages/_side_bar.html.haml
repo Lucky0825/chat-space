@@ -1,12 +1,12 @@
 .side
   .side__top
     .side__top__box
-      .name-box かれん
+      = current_user.name
       .side-top-box-box
         =link_to "#", class: "side_top_box-box_btn" do
           = icon('fas', 'edit')
-        =link_to "#", class: "side_top_box_box_btn" do
-          = icon('fas', 'cog')
+        = link_to edit_user_path(current_user) do
+          = icon('fas', 'cog', class: 'icon')
   .side-content
     .groups
       =link_to "#", class: "groups" do
