@@ -3,25 +3,25 @@
     .side__top__box
       .name-box かれん
       .side-top-box-box
-        %a.side_top_box_box_btn{:href => "#"}
-          %i.fas.fa-edit
-        %a.side_top_box_box_btn{:href => "#"}
-          %i.fas.fa-cog
+        =link_to "#", class: "side_top_box-box_btn" do
+          = icon('fas', 'edit')
+        =link_to "#", class: "side_top_box_box_btn" do
+          = icon('fas', 'cog')
   .side-content
     .groups
-      %a.groups{:href => "#"}
+      =link_to "#", class: "groups" do
         .group
           family
         .chat
           こんにちは
     .groups
-      %a{:href => "#"}
+      =link_to "#", class: "groups" do
         .group
           school
         .chat
           おはよう
     .groups
-      %a{:href => "#"}
+      =link_to "#", class: "groups" do
         .group
           office
         .chat

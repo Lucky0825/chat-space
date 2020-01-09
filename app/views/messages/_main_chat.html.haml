@@ -6,7 +6,7 @@
         .main__top__box__box
           member : かれん
       .main-top-right-box
-        %a{:href => "#"} Edit
+        = link_to "Edit" ,"#"
   .main-content
     .post
       .next
@@ -33,6 +33,6 @@
           %label.input-box__image
             %i.fas.fa-image
             .image
-              %input{:type => "file"}/
+              %input{type: "file"}
       .form-btn
-        %a{:href => "#"} Send
+        = link_to "Send" ,"#"
