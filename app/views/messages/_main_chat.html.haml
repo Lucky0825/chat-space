@@ -2,9 +2,10 @@
   .main__top
     .main__top__box
       .main__top__group
-        school
+        #{@group.name}
         .main__top__box__box
-          member : かれん
+          -@group.users.each do |user|
+            #{user.name}
       .main-top-right-box
         = link_to "Edit" ,"#"
   .main-content
@@ -25,14 +26,11 @@
       .talk
         こんばんは
   .main-bottom
-    .form-space
-      .form-box
-        .form-mini-box
-          type a message
-        .form-box-box
-          %label.input-box__image
-            %i.fas.fa-image
-            .image
-              %input{type: "file"}
-      .form-btn
-        = link_to "Send" ,"#"
+    = form_for [@group, @message] do |f|
+      .form-space
+        = f.text_field :content, class: 'form-mini-box', placeholder: 'type a message'
+        .form_box
+          = f.label :image, class: 'form-box-box' do
+            = icon('fas', 'image', class: 'form')
+            = f.file_field :image, class: 'image'
+      = f.submit 'Send', class: 'form-btn'
