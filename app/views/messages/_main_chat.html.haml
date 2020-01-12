@@ -7,24 +7,11 @@
           -@group.users.each do |user|
             #{user.name}
       .main-top-right-box
-        = link_to "Edit" ,"#"
+        = link_to "Edit", edit_group_path(@group)
+ 
   .main-content
-    .post
-      .next
-        .poster
-          かれん
-        .date
-          2020/01/05(Sun) 20:31:56
-      .talk
-        こんにちは
-    .post
-      .next
-        .poster
-          えり
-        .date
-          2020/01/05(Sun) 20:31:59
-      .talk
-        こんばんは
+    = render @messages
+  
   .main-bottom
     = form_for [@group, @message] do |f|
       .form-space
