@@ -11,20 +11,9 @@
   .side-content
     - current_user.groups.each do |group|
       .groups
-        =link_to "#", class: "groups" do
+        = link_to group_messages_path(group) do
           .group
-            family
+            = group.name
           .chat
-            こんにちは
-      .groups
-        =link_to "#", class: "groups" do
-          .group
-            school
-          .chat
-            おはよう
-      .groups
-        =link_to "#", class: "groups" do
-          .group
-            office
-          .chat
-            お疲れ様
+            = group.show_last_message
+      
