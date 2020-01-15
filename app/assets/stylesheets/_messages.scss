@@ -22,6 +22,7 @@
       background-color: #253141;
       display: flex;
       justify-content: space-between;
+      color: white;
     
 
       .name-box {
@@ -51,6 +52,7 @@
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     width: 300px;
+    overflow: auto;
     
     .groups {
       padding-top: 20px;
@@ -122,62 +124,35 @@
     height: calc(100vh - 190px);
     width: calc(100vw - 300px);
     background-color: #fafafa;
+    overflow: auto;
   
-    .post {
+    .upper {
       margin-left: 40px;
     }
 
-    .next {
-      display: flex;
-    }
+      .post {
+        display: flex;
+      }  
 
-    .poster {
-      padding-top: 35px;
-      color: #333333;
-      font-size: 16px;
-      margin-bottom: 12px;
-      margin-right: 5px;
-    }
+        .poster {
+          padding-top: 35px;
+          color: #333333;
+          font-size: 16px;
+          margin-bottom: 12px;
+          margin-right: 5px;
+        }
 
-    .date {
-      color: #999999;
-      font-size: 12px;
-      padding-top: 35px;
-    }
+        .date {
+          color: #999999;
+          font-size: 12px;
+          padding-top: 35px;
+        }
 
-    .talk {
-      color: #434a54;
-      font-size: 14px;
-      margin-bottom: 46px;
-    }
-
-    .post {
-    margin-left: 40px;
-    }
-
-    .next {
-      display: flex;
-    }
-
-    .poster {
-      padding-top: 35px;
-      color: #333333;
-      font-size: 16px;
-      margin-bottom: 12px;
-      margin-right: 5px;
-    }
-
-    .date {
-      color: #999999;
-      font-size: 12px;
-      padding-top: 35px;
-    }
-
-    .talk {
-      color: #434a54;
-      font-size: 14px;
-      margin-bottom: 46px;
-    }
+      .talk {
+        color: #434a54;
+        font-size: 14px;
+        margin-bottom: 46px;
+      }
   }
 
    .main-bottom {
