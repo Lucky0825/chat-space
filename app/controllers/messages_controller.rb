@@ -11,6 +11,7 @@ class MessagesController < ApplicationController
     if @message.save
       respond_to do |format|
         format.json
+        format.html{redirect_to group_messages_path(@group)}
       end
     else   
       @messages = @group.messages.includes(:user)
