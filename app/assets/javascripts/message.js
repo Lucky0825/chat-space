@@ -1,7 +1,4 @@
 $(function(){ 
-  // last_message_id = $('.message:last').data("message-id");
-  // console.log(last_message_id);
-
   var buildHTML = function(message) {
     if (message.content && message.image) {
       //data-idが反映されるようにしている
@@ -125,7 +122,7 @@ $(function(){
     })
 
     .fail(function() {
-      console.log('error');
+      alert('error');
     })
   }; 
 
