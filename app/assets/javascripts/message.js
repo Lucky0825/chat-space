@@ -26,7 +26,6 @@ $(function(){
       //同様に、data-idが反映されるようにしている
       var html = 
       `<div class="message" data-message-id="${message.id}">
-        ${message.id}
         <div class="post">
           <div class="poster">
             ${message.user_name}
@@ -48,7 +47,6 @@ $(function(){
       //同様に、data-idが反映されるようにしている
       var html = 
       `<div class="message" data-message-id="${message.id}">
-        ${message.id}
         <div class="post">
           <div class="poster">
             ${message.user_name}
