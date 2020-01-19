@@ -17,3 +17,4 @@
 .byebug_history
 
 public/up/loads/*
+config/secrets.yml
