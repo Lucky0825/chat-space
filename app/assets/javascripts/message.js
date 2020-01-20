@@ -19,10 +19,7 @@ $(function(){
             <img class="lower-message__image" src="${message.image}">
         </div>
       </div>`
-      return html;
-    }
-    
-    else if (message.content) {
+    }else if (message.content) {
       //同様に、data-idが反映されるようにしている
       var html = 
       `<div class="message" data-message-id="${message.id}">
@@ -40,10 +37,7 @@ $(function(){
           </div>
         </div>
       </div>`
-      return html;
-    }
-    
-    else if(message.image) {
+    } else if(message.image) {
       //同様に、data-idが反映されるようにしている
       var html = 
       `<div class="message" data-message-id="${message.id}">
@@ -56,11 +50,11 @@ $(function(){
           </div>
         </div>
         <div class="talk">
-          <img class="lower-message__image" src="/uploads/message/image/51/test_image.jpg" alt="Test image">
+          <img class="lower-message__image" src=${messasge.image} alt="Test image">
         </div>
       </div>`
-      return html;
-    };    
+    }; 
+    return html;   
   }
 
   $('#new_message').on('submit', function(e){
