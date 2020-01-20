@@ -50,12 +50,12 @@ $(function(){
           </div>
         </div>
         <div class="talk">
-          <img class="lower-message__image" src=${messasge.image} alt="Test image">
+          <img class="lower-message__image" src="${message.image}">
         </div>
       </div>`
     }; 
     return html;   
-  }
+  };
 
   $('#new_message').on('submit', function(e){
     e.preventDefault();
